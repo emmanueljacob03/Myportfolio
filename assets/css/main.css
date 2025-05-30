@@ -72,6 +72,55 @@ input, select, textarea {
 	appearance: none;
 }
 
+/* Headings with class 'major' all same size and bold */
+h3.major {
+  font-size: 1.2rem;   /* adjust as needed */
+  font-weight: bold;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+/* Education heading (h4.education) styled like h3.major */
+h4.education {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 2em;
+  margin-bottom: 0.75em;
+}
+
+/* Certification heading uses h3.major already, but make sure it has that class */
+h3.certification-heading {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+}
+
+/* Optional: make the certification boxes flex and spaced nicely */
+.certifications {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.cert-box {
+  flex: 1 1 calc(33.333% - 1rem);
+  background: #e3e0e0;
+  padding: 0.8rem 1rem;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cert-box:hover {
+  background-color: #5896e8;
+  color: white;
+}
+
+
 /* Basic */
 
 	@-ms-viewport {
@@ -182,7 +231,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #ffffff !important;
+			color: #035623 !important;
 		}
 
 		a.special:not(.button) {
@@ -230,11 +279,11 @@ input, select, textarea {
 			}
 
 			a.special:not(.button):hover:before {
-				background-color: rgba(255, 255, 255, 0.025);
+				background-color: rgba(3, 88, 37, 0.025);
 			}
 
 			a.special:not(.button):active:before {
-				background-color: rgba(255, 255, 255, 0.075);
+				background-color: rgba(136, 230, 192, 0.075);
 			}
 
 	strong, b {
